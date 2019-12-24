@@ -1,0 +1,58 @@
+.projects {
+  display: flex;
+  width: 55vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+
+.projects .title {
+  margin: 5% 0 8% 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.projects .project-grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projects .card {
+  width: 20vw;
+  margin-bottom: 10px;
+}
+
+.projects .card .title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.projects .card .project-name {
+  font-weight: bold;
+}
+
+.projects .card .award {
+  font-size: 12px;
+  background-color: #8E3B46;
+  color: white;
+  padding: 1px 4px;
+  border-radius: 5px;
+}
+
+.projects .card .description {
+  min-height: 20vh;
+}
+
+.projects .card .tools {
+  font-weight: bold;
+}
+
+.projects a:hover {
+  color: #8E3B46 !important;
+}

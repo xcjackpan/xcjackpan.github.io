@@ -1,0 +1,48 @@
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F3D9DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .text {
+  max-width: 30vw;
+}
+
+.banner .text .name {
+  margin-top: 5%;
+  font-size: 70px;
+  font-weight: bold;
+  color: #8E3B46;
+}
+
+.banner .text .icons {
+  margin-top: 15%;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.banner .text .icons a {
+  color: #8E3B46;
+}
+
+.banner .text .icons a:hover {
+  color: black;
+}
+
+.banner img {
+  width: 25vw;
+  border-radius: 50%;
+  margin: 0 0% 0 10%;
+}

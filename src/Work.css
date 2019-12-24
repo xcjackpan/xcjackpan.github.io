@@ -1,0 +1,86 @@
+.work {
+  display: flex;
+  width: 45vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+
+.work .title {
+  margin: 5% 0 8% 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.work .work-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work .resume {
+  padding: 0 0 20vh 10vw;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .resume .resume-button {
+  padding: 2px 30px;
+  text-align: center;
+  line-height: 2.0;
+  border: 1px solid #8E3B46;
+  color: #8E3B46;
+  font-size: 24px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  font-weight: bold;
+}
+  
+.work .resume .resume-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #8E3B46;
+}
+
+.work .timeline {
+  font-family: 'Roboto';
+  width: 30vw;
+}
+
+.work ul {
+  padding: 0 0 0 20px;
+}
+
+.work .icon {
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.work .description {
+  text-align: left;
+  font-size: 15px;
+  margin-left: 30px;
+  color: black;
+}
+
+.work .company {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.ant-timeline-item-content {
+  top: -20px
+}
+
+.work .description .role {
+  font-size: 16px;
+}
