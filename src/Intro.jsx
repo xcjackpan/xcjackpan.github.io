@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, GitHub } from 'react-feather';
+import { Mail, Linkedin, GitHub, ChevronsDown } from 'react-feather';
 import './Intro.css';
 
 let Intro = () => {
@@ -18,6 +18,7 @@ let Intro = () => {
           </span>
         </div>
         <img className="photo" src="images/face.jpg" alt="me"/>
+        <ChevronsDown className="chevrons" size={icon_size}/>
       </div>
     </div>
   );

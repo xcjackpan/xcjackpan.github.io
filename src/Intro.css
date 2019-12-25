@@ -46,3 +46,21 @@
   border-radius: 50%;
   margin: 0 0% 0 10%;
 }
+
+.banner .chevrons {
+  color: #8E3B46;
+  position: absolute;
+  bottom: 4vh;
+  /*animation: MoveUpDown 2s linear infinite;*/
+}
+
+/*
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 40px;
+  }
+  50% {
+    bottom: 30px;
+  }
+}
+*/
