@@ -50,7 +50,7 @@ let ProjectInfo = [{name: "UWClasswatch", image:"images/classwatch.png",
 let Projects = () => {
   return (
     <div className="projects">
-      <span className="title">What I've Done</span>
+      <span className="title">Projects</span>
       <div className="project-grid">
         {ProjectInfo.map((elem) => {
           let actions = [<a href={elem.github}><Code size={20}/></a>];

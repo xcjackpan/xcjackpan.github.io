@@ -1,7 +1,7 @@
 import React from 'react';
 import "antd/dist/antd.css";
 import './Work.css';
-import { Timeline, Progress } from 'antd';
+import { Timeline, Tag } from 'antd';
 let TimelineItem = Timeline.Item;
 
 let WorkDescription = (props) => {
@@ -40,10 +40,14 @@ let WorkInfo = [{company: "Wish", image:"images/wish.png",
                   </ul>},
                ]
 
+let Skills = {Languages: ["JavaScript", "TypeScript", "CSS", "C++", "C", "Python"], 
+              Frameworks: ["React", "Redux", "Express", "Mongoose"], 
+              Technologies: ["NodeJS", "MongoDB", "Docker", "React Native", "Git"]};
+
 let Work = () => {
   return (
     <div className="work">
-      <span className="title">Where I've Worked</span>
+      <span className="title">Skills and Work Experience</span>
       <div className="work-block">
         <Timeline className="timeline">
           {WorkInfo.map((elem) => {
@@ -52,9 +56,14 @@ let Work = () => {
                   </TimelineItem>
           })}
         </Timeline>
-        <div className="resume">
+        <div className="resume-skills">
           <a href="/files/resume.pdf"><p className="resume-button">Full Resume</p></a>
-          {/* Skills */}
+          <span className="subtitle">Skills and Work Experience</span>
+          <div className="skills">
+            {Skills.Languages.map((elem) => {
+              return <Tag>{elem}</Tag>;
+            })}
+          </div>
         </div>
       </div>
     </div>
