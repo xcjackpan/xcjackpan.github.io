@@ -1,7 +1,7 @@
 import React from 'react';
 import "antd/dist/antd.css";
 import './Work.css';
-import { Timeline  } from 'antd';
+import { Timeline, Progress } from 'antd';
 let TimelineItem = Timeline.Item;
 
 let WorkDescription = (props) => {
@@ -54,6 +54,7 @@ let Work = () => {
         </Timeline>
         <div className="resume">
           <a href="/files/resume.pdf"><p className="resume-button">Full Resume</p></a>
+          {/* Skills */}
         </div>
       </div>
     </div>

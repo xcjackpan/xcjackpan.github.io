@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .work .resume .resume-button {
@@ -34,7 +35,7 @@
   line-height: 2.0;
   border: 1px solid #8E3B46;
   color: #8E3B46;
-  font-size: 24px;
+  font-size: 22px;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
