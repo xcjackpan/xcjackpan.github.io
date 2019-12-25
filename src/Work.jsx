@@ -51,7 +51,7 @@ let openResume = () => {
 let Work = () => {
   return (
     <div className="work">
-      <span className="title">Skills and Work Experience</span>
+      <span className="title">Experience</span>
       <div className="work-block">
         <Timeline className="timeline">
           {WorkInfo.map((elem) => {
