@@ -18,6 +18,8 @@ let Intro = () => {
           </span>
         </div>
         <img className="photo" src="images/face.jpg" alt="me"/>
+        <div className="mouse">
+        </div>
         <ChevronsDown className="chevrons" size={icon_size}/>
       </div>
     </div>

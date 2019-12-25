@@ -61,7 +61,7 @@ let Work = () => {
           })}
         </Timeline>
         <div className="resume-skills">
-          <p className="resume-button" onClick={openResume}>PDF Resume</p>
+          <p className="resume-button" onClick={openResume}>Resume</p>
           {["Languages", "Frameworks", "Technologies"].map((elem) => {
             return (
               <div>

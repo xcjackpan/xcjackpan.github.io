@@ -51,16 +51,14 @@
   color: #8E3B46;
   position: absolute;
   bottom: 4vh;
-  /*animation: MoveUpDown 2s linear infinite;*/
+  animation: bounce 2s ease infinite;
 }
 
-/*
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 40px;
-  }
+@keyframes bounce {
   50% {
-    bottom: 30px;
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
-*/
