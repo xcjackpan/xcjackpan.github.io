@@ -44,6 +44,10 @@ let Skills = {Languages: ["JavaScript", "TypeScript", "CSS", "C++", "C", "Python
               Frameworks: ["React", "Redux", "Express", "Mongoose"], 
               Technologies: ["NodeJS", "MongoDB", "Docker", "React Native", "Git"]};
 
+let openResume = () => {
+	window.open('files/resume.pdf', '_blank', 'fullscreen=yes');
+}
+
 let Work = () => {
   return (
     <div className="work">
@@ -57,13 +61,19 @@ let Work = () => {
           })}
         </Timeline>
         <div className="resume-skills">
-          <a href="/files/resume.pdf"><p className="resume-button">Full Resume</p></a>
-          <span className="subtitle">Skills and Work Experience</span>
-          <div className="skills">
-            {Skills.Languages.map((elem) => {
-              return <Tag>{elem}</Tag>;
-            })}
-          </div>
+          <p className="resume-button" onClick={openResume}>PDF Resume</p>
+          {["Languages", "Frameworks", "Technologies"].map((elem) => {
+            return (
+              <div>
+                <span className="subtitle">{elem}</span>
+                <div className="skills">
+                  {Skills[elem].map((name) => {
+                    return <Tag className="skill">{name}</Tag>;
+                  })}
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ let ProjectTitle = (props) => {
 }
 
 let ProjectInfo = [{name: "UWClasswatch", image:"images/classwatch.png", 
-                    tools:"React, Typescript, NodeJS, Express, MongoDB",
+                    tools:"React, NodeJS, Typescript, MongoDB",
                     desc: `Web app that lets students subscribe to receive email notifications when a course they're interested in 
                            has a spot open for enrolment. 1.2k+ users.`,
                     github: "https://github.com/xcjackpan/classwatch-v2",
