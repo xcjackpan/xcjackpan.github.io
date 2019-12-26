@@ -9,7 +9,7 @@
 
 .work .title {
   margin: 5% 0 8% 0;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -36,7 +36,7 @@
   line-height: 2.0;
   border: 1px solid #000000;
   color: #000000;
-  font-size: 22px;
+  font-size: 1.5em;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -51,6 +51,13 @@
   border: 1px solid #8E3B46;
 }
 
+.work .resume-skills .subtitle {
+  font-weight: bold;
+  padding-bottom: 5px;
+  font-size: 1em;
+}
+
+
 .work .resume-skills .skills {
   width: 100%;
   display: flex;
@@ -61,14 +68,8 @@
   padding: 4% 0 8% 0;
 }
 
-.work .resume-skills .subtitle {
-  font-weight: bold;
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-
-.work .resume-skills .skill {
-  font-size: 14px;
+.work .resume-skills .skills .skill {
+  font-size: 1.1em;
   margin: 1%;
 }
 
@@ -88,16 +89,16 @@
   border-radius: 50%;
 }
 
-.work .description {
-  text-align: left;
-  font-size: 15px;
-  margin-left: 30px;
-  color: black;
+.work .company {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.work .company {
-  font-size: 22px;
-  font-weight: bold;
+.work .description {
+  text-align: left;
+  font-size: 1em;
+  margin-left: 30px;
+  color: black;
 }
 
 .ant-timeline-item-content {
@@ -105,5 +106,100 @@
 }
 
 .work .description .role {
-  font-size: 16px;
+  font-size: 1.25em;
+}
+
+@media only screen and (max-width : 1000px) {
+  .work {
+    width: 75vw;
+  }
+
+  .work .work-block {
+    width: 100%;
+  }
+
+  .work .resume-skills {
+    padding: 0 0 20vh 10vw;
+    width: 35vw;
+  }
+
+  .work .company {
+    font-size: 1.25em;
+  }
+
+  .work .description {
+    font-size: 1em;
+  }
+
+  .work .timeline {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width : 775px) {
+  .work {
+    width: 100vw;
+  }
+
+  .work .title {
+    margin: 5% 0 5% 0;
+  }
+
+  .work .work-block {
+    flex-direction: column-reverse;
+  }
+
+  .work .resume-skills .resume-button {
+    padding: 2px 30px;
+    margin-bottom: 5vh;
+    align-self: center;
+  }
+
+  .work .resume-skills {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 0 8vh 0;
+    width: 70vw;
+    height: auto;
+  }
+
+  .work .resume-skills .skill-block {
+    width: 100%;
+  }
+
+  .work .resume-skills .subtitle {
+    font-size: 1.25em;
+  }
+
+  .work .resume-skills .skills {
+    padding: 2% 0 2% 0;
+  }
+
+  .work .resume-skills .skills .skill {
+    font-size: 1.1em;
+    margin-left: 0;
+  }
+
+  .work .timeline {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  .work .resume-skills {
+    width: 80vw;
+  }
+
+  .work .timeline {
+    width: 80vw;
+  }
+
+  .work .company {
+    font-size: 1.25em;
+  }
+
+  .work .role {
+    font-size: 1em;
+  }
 }

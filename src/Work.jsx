@@ -64,7 +64,7 @@ let Work = () => {
           <p className="resume-button" onClick={openResume}>Resume</p>
           {["Languages", "Frameworks", "Technologies"].map((elem) => {
             return (
-              <div>
+              <div className="skill-block">
                 <span className="subtitle">{elem}</span>
                 <div className="skills">
                   {Skills[elem].map((name) => {
