@@ -200,6 +200,10 @@
   }
 
   .work .role {
-    font-size: 1em;
+    font-size: 0.8em;
+  }
+
+  .work .description {
+    font-size: 0.9em;
   }
 }

@@ -9,7 +9,7 @@
 
 .projects .title {
   margin: 5% 0 8% 0;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -29,6 +29,7 @@
 .projects .card .title-block {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding-bottom: 10px;
 }
@@ -38,7 +39,7 @@
 }
 
 .projects .card .award {
-  font-size: 12px;
+  font-size: 0.8em;
   background-color: #8E3B46;
   color: white;
   padding: 1px 4px;
@@ -55,4 +56,36 @@
 
 .projects a:hover {
   color: #8E3B46 !important;
+}
+
+@media only screen and (max-width : 1100px) {
+  .projects {
+    width: 80vw;
+  }
+
+  .projects .card {
+    width: 38vw;
+  }
+}
+
+@media only screen and (max-width : 850px) {
+  .projects .card {
+    width: 50vw;
+  }
+
+  .projects .card .title-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .projects .card {
+    width: 80vw;
+  }
+
+  .projects .card .title-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
