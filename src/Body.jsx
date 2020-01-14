@@ -5,7 +5,7 @@ import './Body.css';
 
 let Body = () => {
   return (
-    <div className="body">
+    <div id="body" className="body">
       <Work />
       <Projects />
     </div>

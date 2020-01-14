@@ -18,7 +18,7 @@ let Intro = () => {
       <img className="photo" src="images/face.jpg" alt="me"/>
       <div className="mouse">
       </div>
-      <ChevronsDown id="chevrons" className="icon" />
+      <a href="#body" id="chevrons"><ChevronsDown className="icon" /></a>
     </div>
   );
 }

@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   color: black;
+  padding-bottom: 10vh;
 }
 
 .projects .title {
