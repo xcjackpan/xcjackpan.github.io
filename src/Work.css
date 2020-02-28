@@ -54,9 +54,8 @@
 .work .resume-skills .subtitle {
   font-weight: bold;
   padding-bottom: 5px;
-  font-size: 1em;
+  font-size: 1.15em;
 }
-
 
 .work .resume-skills .skills {
   width: 100%;
@@ -90,13 +89,13 @@
 }
 
 .work .company {
-  font-size: 1.5em;
+  font-size: 1.35em;
   font-weight: bold;
 }
 
 .work .description {
   text-align: left;
-  font-size: 1em;
+  font-size: 1.1em;
   margin-left: 30px;
   color: black;
 }
@@ -125,10 +124,6 @@
 
   .work .company {
     font-size: 1.25em;
-  }
-
-  .work .description {
-    font-size: 1em;
   }
 
   .work .timeline {

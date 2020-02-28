@@ -23,20 +23,20 @@ let ProjectTitle = (props) => {
 }
 
 let ProjectInfo = [{name: "UWClasswatch", image:"images/classwatch.png", 
-                    tools:"React, NodeJS, Typescript, MongoDB",
+                    tools:"React, Node, Typescript, MongoDB",
                     desc: `Web app that lets students subscribe to receive email notifications when a course they're interested in 
                            has a spot open for enrolment. 1.2k+ users.`,
                     github: "https://github.com/xcjackpan/classwatch-v2",
                     demo: "http://www.uwclasswatch.com/"},
                    {name: "AR World", image:"images/arworld.png", 
-                    tools:"Kotlin, React, NodeJS",
+                    tools:"Kotlin, React, Node",
                     desc: `A smartphone camera app identifies images and replaces them with 
                            videos uploaded through our web interface.`,
                     github: "https://github.com/xcjackpan/ar-world",
                     demo: "https://www.youtube.com/watch?v=BUm1GCDVzN8",
                     award: "Best AR Hack @ PennApps XX"},
                    {name: "Claire", image:"images/claire.png", 
-                    tools:"React, NodeJS, Firebase",
+                    tools:"React, Node, Firebase",
                     desc: `A chatbot for senior citizens which uses sentiment analysis to compute 
                            and display metrics on mental wellbeing.`,
                     github: "https://github.com/xcjackpan/claire",

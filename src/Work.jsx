@@ -16,7 +16,7 @@ let WorkDescription = (props) => {
 }
 
 let WorkInfo = [{company: "Wish", image:"images/wish.png", 
-                 info:"Software Developer | Jan - April 2020",
+                 info:"Full Stack Engineer | Jan - April 2020",
                  desc: 
                   <ul>
                     <li>Filler filler filler</li>
@@ -40,9 +40,9 @@ let WorkInfo = [{company: "Wish", image:"images/wish.png",
                   </ul>},
                ]
 
-let Skills = {Languages: ["JavaScript", "TypeScript", "CSS", "C++", "C", "Python"], 
+let Skills = {Languages: ["Python", "JavaScript", "TypeScript", "CSS", "C++", "C"], 
               Frameworks: ["React", "Redux", "Express", "Mongoose"], 
-              Technologies: ["NodeJS", "MongoDB", "Docker", "React Native", "Git"]};
+              Technologies: ["Node", "MongoDB", "Docker", "React Native", "Git"]};
 
 let openResume = () => {
 	window.open('files/resume.pdf', '_blank', 'fullscreen=yes');

@@ -21,6 +21,12 @@
   color: #8E3B46;
 }
 
+.banner .text .tag {
+  line-height: 0.5;
+  font-size: 0.75em;
+  color: grey;
+}
+
 .banner .text .icons {
   margin-top: 15%;
   display: flex;
