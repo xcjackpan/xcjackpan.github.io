@@ -3,10 +3,10 @@ import Work from './Work.jsx';
 import Projects from './Projects.jsx';
 import './Body.css';
 
-let Body = () => {
+let Body = (props) => {
   return (
     <div id="body" className="body">
-      <Work />
+      <Work openResume={props.openResume} />
       <Projects />
     </div>
   );

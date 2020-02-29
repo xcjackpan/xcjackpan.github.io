@@ -44,11 +44,7 @@ let Skills = {Languages: ["Python", "JavaScript", "TypeScript", "CSS", "C++", "C
               Frameworks: ["React", "Redux", "Express", "Mongoose"], 
               Technologies: ["Node", "MongoDB", "Docker", "React Native", "Git"]};
 
-let openResume = () => {
-	window.open('files/resume.pdf', '_blank', 'fullscreen=yes');
-}
-
-let Work = () => {
+let Work = (props) => {
   return (
     <div className="work">
       <span className="title">Experience</span>
@@ -61,7 +57,7 @@ let Work = () => {
           })}
         </Timeline>
         <div className="resume-skills">
-          <p className="resume-button" onClick={openResume}>Resume</p>
+          <p className="resume-button" onClick={props.openResume}>Resume</p>
           {["Languages", "Frameworks", "Technologies"].map((elem) => {
             return (
               <div className="skill-block">

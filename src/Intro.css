@@ -21,30 +21,27 @@
   color: #8E3B46;
 }
 
-.banner .text .tag {
-  line-height: 0.5;
-  font-size: 0.75em;
-  color: grey;
+.banner .text .code {
+  font-family: monospace;
+  color: #808080;
 }
 
 .banner .text .icons {
   margin-top: 15%;
   display: flex;
-  width: 40%;
+  width: 45%;
   justify-content: space-between;
 }
 
 .banner .text .icons .icon {
   height: 2.5vw;
   width: 2.5vw;
-}
-
-.banner .text .icons a {
   color: #8E3B46;
 }
 
-.banner .text .icons a:hover {
+.banner .text .icons .icon:hover {
   color: black;
+  cursor: pointer;
 }
 
 .banner img {
