@@ -1,30 +1,33 @@
 import React from 'react';
 import "antd/dist/antd.css";
 import './Work.css';
-import { Timeline, Tag } from 'antd';
-let TimelineItem = Timeline.Item;
+import { Collapse, Tag } from 'antd';
+let Panel = Collapse.Panel;
 
-let WorkDescription = (props) => {
+let WorkPanelHeader = (props) => {
   return (
-    <div className="description">
-      <span className="company">{props.company}</span> <br/>
-      <span className="role">{props.info}</span> <br/>
-      {props.desc}
-      <br/>
+    <div className="header">
+      <img className="icon" src={props.image} alt=":)"/>
+      <div className="heading">
+        <span className="company">{props.company}</span>
+        <span className="info">{props.info}</span>
+      </div>
     </div>
   )
 }
 
 let WorkInfo = [{company: "Wish", image:"images/wish.png", 
                  info:"Full Stack Engineer | Jan - April 2020",
-                 desc: 
+                 time: "Jan - April 2020",
+                 desc:
                   <ul>
                     <li>Filler filler filler</li>
                     <li>Filler filler filler</li>
                   </ul>},
                 {company: "D2L", image:"images/d2l.png", 
                  info:"Software Developer | May - Aug 2019",
-                 desc: 
+                 time: "May - Aug 2019",
+                 desc:
                   <ul>
                     <li>Improved NLP algorithm to generate questions from text, increasing yield of acceptable questions by ~60%</li>
                     <li>Led the design and development of in-browser PDF whiteboard and editor</li>
@@ -33,7 +36,8 @@ let WorkInfo = [{company: "Wish", image:"images/wish.png",
                   </ul>},
                 {company: "DragonAgile", image:"images/dragonagile.png", 
                  info:"Software Developer | May - Aug 2018",
-                 desc: 
+                 time: "May - Aug 2018",
+                 desc:
                   <ul>
                     <li>Developed permissions manager using React, Node.js, and Java</li>
                     <li>Built plugins for Jira and Confluence in Java</li>
@@ -48,14 +52,20 @@ let Work = (props) => {
   return (
     <div className="work">
       <span className="title">Experience</span>
-      <div className="work-block">
-        <Timeline className="timeline">
-          {WorkInfo.map((elem) => {
-            return <TimelineItem dot={<img className="icon" src={elem.image} alt=":)"/>}> 
-                    <WorkDescription company={elem.company} info={elem.info} desc={elem.desc}/>
-                  </TimelineItem>
+      <div className="experience-block">
+        <div className="timeline">
+          {WorkInfo.map((elem, index) => {
+            return (
+              <Collapse className="work-item" expandIconPosition="right">
+                <Panel className="panel"
+                       key={index}
+                       header={<WorkPanelHeader image={elem.image} company={elem.company} info={elem.info}/>}>
+                  {elem.desc}
+                </Panel>
+              </Collapse>
+            )
           })}
-        </Timeline>
+        </div>
         <div className="resume-skills">
           <p className="resume-button" onClick={props.openResume}>Resume</p>
           {["Languages", "Frameworks", "Technologies"].map((elem) => {

@@ -13,7 +13,7 @@
   font-weight: bold;
 }
 
-.work .work-block {
+.work .experience-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -74,46 +74,55 @@
 
 .work .timeline {
   font-family: 'Roboto';
-  width: 30vw;
+  width: 35vw;
+  align-self: flex-start;
 }
 
-.work ul {
-  padding: 0 0 0 20px;
+.work .work-item {
+  margin-bottom: 20px;
 }
 
-.work .icon {
+.work .work-item .panel .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.work .work-item .panel .header .heading {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.work .work-item .panel .header .icon {
   padding: 0;
   margin: 0;
   width: 50px;
   border-radius: 50%;
 }
 
-.work .company {
-  font-size: 1.35em;
+.work .work-item .panel .header .company {
+  font-size: 1.45em;
   font-weight: bold;
 }
 
-.work .description {
-  text-align: left;
-  font-size: 1.1em;
-  margin-left: 30px;
-  color: black;
-}
-
-.ant-timeline-item-content {
-  top: -20px
-}
-
-.work .description .role {
+.work .work-item .panel .header .info {
   font-size: 1.25em;
 }
+
+.work .work-item .panel li {
+  font-size: 1.1em;
+}
+
 
 @media only screen and (max-width : 1000px) {
   .work {
     width: 75vw;
   }
 
-  .work .work-block {
+  .work .experience-block {
     width: 100%;
   }
 
@@ -140,7 +149,7 @@
     margin: 5% 0 5% 0;
   }
 
-  .work .work-block {
+  .work .experience-block {
     flex-direction: column-reverse;
   }
 

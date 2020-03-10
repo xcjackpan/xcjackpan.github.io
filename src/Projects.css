@@ -1,3 +1,7 @@
+.ant-card-hoverable:hover {
+  cursor: default;
+}
+
 .projects {
   display: flex;
   width: 55vw;
