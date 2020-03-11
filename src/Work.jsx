@@ -17,31 +17,58 @@ let WorkPanelHeader = (props) => {
 }
 
 let WorkInfo = [{company: "Wish", image:"images/wish.png", 
-                 info:"Full Stack Engineer | Jan - April 2020",
+                 info:"Full Stack Engineer, Payments | Jan - April 2020",
                  time: "Jan - April 2020",
-                 desc:
+                 desc_:
                   <ul>
                     <li>Filler filler filler</li>
                     <li>Filler filler filler</li>
-                  </ul>},
+                  </ul>,
+                 desc:
+                  <div className="description">
+                    Not sure yet, captain.
+                  </div>,
+                },
                 {company: "D2L", image:"images/d2l.png", 
                  info:"Software Developer | May - Aug 2019",
                  time: "May - Aug 2019",
-                 desc:
+                 desc_:
                   <ul>
                     <li>Improved NLP algorithm to generate questions from text, increasing yield of acceptable questions by ~60%</li>
                     <li>Led the design and development of in-browser PDF whiteboard and editor</li>
                     <li>Implemented major frontend features in Typescript using React</li>
                     <li>Built crucial backend functionality with Node.js, Express, and MongoDB</li>
-                  </ul>},
-                {company: "DragonAgile", image:"images/dragonagile.png", 
-                 info:"Software Developer | May - Aug 2018",
-                 time: "May - Aug 2018",
+                  </ul>,
                  desc:
-                  <ul>
-                    <li>Developed permissions manager using React, Node.js, and Java</li>
-                    <li>Built plugins for Jira and Confluence in Java</li>
-                  </ul>},
+                  <div className="description">
+                    In trying to generate practice quizzes from text passages, I improved 
+                    our algorithm to increase output of acceptable questions by <strong>~60%</strong>.
+                    <br/><br/>
+                    I led a technical team in the development of an in-browser PDF whiteboard and editor, 
+                    similar to OneNote. Our <strong>React</strong> frontend was written in <strong>TypeScript</strong>.
+                    The backend used <strong>Node</strong> and <strong>MongoDB</strong> with <strong>Mongoose</strong>.
+                  </div>,
+                },
+                {
+                  company: "DragonAgile", image:"images/dragonagile.png", 
+                  info:"Software Developer | May - Aug 2018",
+                  time: "May - Aug 2018",
+                  desc_:
+                    <ul>
+                      <li>Developed permissions manager using React, Node.js, and Java</li>
+                      <li>Built plugins for Jira and Confluence in Java</li>
+                      <li>Engineered front-end improvements to the company website using HTML and CSS</li>
+                    </ul>,
+                  desc: 
+                    <div className="description">
+                      Using <strong>React</strong>, <strong>Node</strong>, and <strong>Java</strong>,
+                      I developed a full-stack web app to help manage a client's user permissions in their 
+                      version control software.
+                      <br/><br/>
+                      I also designed and prototyped a variety of Jira plugins using <strong>Java</strong>. Each
+                      was built according to specifications from our clients.
+                    </div>,
+                },
                ]
 
 let Skills = {Languages: ["Python", "JavaScript", "TypeScript", "CSS", "C++", "C"], 
