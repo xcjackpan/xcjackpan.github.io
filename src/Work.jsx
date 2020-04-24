@@ -19,21 +19,33 @@ let WorkPanelHeader = (props) => {
 let WorkInfo = [
   {
     company: "Wish", image:"images/wish.png", 
-    info:"Full Stack Engineer, Payments | Jan - April 2020",
+    info: "Software Engineer, Payments | Jan - April 2020",
     time: "Jan - April 2020",
     desc_:
     <ul>
-      <li>Filler filler filler</li>
-      <li>Filler filler filler</li>
+      <li>Developed a feature to forgive banned users based on their ad-viewing behavior, increasing weekly gross merchandise value by $3X,XXX</li>
+      <li>Built a system to centralize storage of over 50 million user billing detail entries with no additional latency in the user experience</li>
+      <li>Implemented a process for retrying certain failed payments, with projected annual recovery of $45 million</li>
+      <li>Engineered a feature to promote paying by installments in Brazil, increasing installment purchases by 7.1%</li>
     </ul>,
     desc:
     <div className="description">
-      Not sure yet, captain.
+      I worked on the Payments team at Wish, using <strong>Python</strong> to work on code that processed the purchases
+      of millions of customers.
+      <br />
+      <br />
+      I developed a new system to centralize the storage of over <strong>50 million</strong> customer payment details without 
+      adding any latency in the user experience.
+      <br />
+      <br />
+      I built a process for retrying failed payments that met certain conditions with a projected 
+      annual recovery of <strong>$45 million</strong>. I also implemented a feature to unban users based on how they interacted 
+      with Wish's ads, increasing our weekly gross merchandise value by <strong>$30,XXX</strong>.
     </div>,
   },
   {
     company: "D2L", image:"images/d2l.png", 
-    info:"Software Developer | May - Aug 2019",
+    info: "Software Developer | May - Aug 2019",
     time: "May - Aug 2019",
     desc_:
     <ul>
@@ -54,7 +66,7 @@ let WorkInfo = [
   },
   {
     company: "DragonAgile", image:"images/dragonagile.png", 
-    info:"Software Developer | May - Aug 2018",
+    info: "Software Developer | May - Aug 2018",
     time: "May - Aug 2018",
     desc_:
       <ul>
@@ -76,7 +88,7 @@ let WorkInfo = [
 
 let Skills = {
   Languages: ["Python", "JavaScript", "TypeScript", "CSS", "C++", "C"], 
-  Frameworks: ["React", "Redux", "Express", "Mongoose"], 
+  Frameworks: ["Flask", "Tornado", "React", "Redux", "Express", "Mongoose"], 
   Technologies: ["Node", "MongoDB", "Docker", "React Native", "Git"]
 };
 

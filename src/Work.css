@@ -54,7 +54,7 @@
 .work .resume-skills .subtitle {
   font-weight: bold;
   padding-bottom: 5px;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .work .resume-skills .skills {
@@ -68,7 +68,7 @@
 }
 
 .work .resume-skills .skills .skill {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin: 1%;
 }
 
@@ -87,7 +87,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px 10px;
+  padding: 30px 10px;
 }
 
 .work .work-item .panel .header .heading {
@@ -110,11 +110,11 @@
 }
 
 .work .work-item .panel .header .info {
-  font-size: 1.25em;
+  font-size: 1.4em;
 }
 
 .work .work-item .panel .description {
-  font-size: 1.25em;
+  font-size: 1.4em;
   padding: 4px;
 }
 
