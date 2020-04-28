@@ -45,11 +45,11 @@
 
 .projects .card .project-name {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .projects .card .award {
-  font-size: 1em;
+  font-size: 0.8em;
   background-color: #8E3B46;
   color: white;
   padding: 1px 4px;
@@ -58,7 +58,7 @@
 
 .projects .card .description {
   min-height: 20vh;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 .projects .card .tools {
