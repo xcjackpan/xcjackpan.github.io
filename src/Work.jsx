@@ -23,10 +23,10 @@ let WorkInfo = [
     time: "Jan - April 2020",
     desc_:
     <ul>
-      <li>Developed a feature to forgive banned users based on their ad-viewing behavior, increasing weekly gross merchandise value by $3X,XXX</li>
-      <li>Built a system to centralize storage of over 50 million user billing detail entries with no additional latency in the user experience</li>
-      <li>Implemented a process for retrying certain failed payments, with projected annual recovery of $45 million</li>
-      <li>Engineered a feature to promote paying by installments in Brazil, increasing installment purchases by 7.1%</li>
+      <li>Engineered functionality in <strong>Python</strong> with <strong>Tornado</strong> and <strong>MongoDB</strong> to block orders when user behavior was suspicious; added an admin UI in React for non-technical staff to easily configure detection parameters</li>
+      <li>Built a system to unban certain users deemed unlikely to offend again, increasing GMV by <strong>$120K per month</strong></li>
+      <li>Implemented a flow in <strong>Python</strong> with <strong>Tornado</strong> and <strong>MongoDB</strong> to retry processing failed payments from customers under special conditions, with a projected recovery of <strong>$45 million annually</strong></li>
+      <li>Developed features and fixed bugs to improve payments processing flow, reduce customer fraud, and enhance the user checkout experience – leading to impacts like a 7% growth in orders by promoting multi-installment payments</li>
     </ul>,
     desc:
     <div className="description">
@@ -34,13 +34,14 @@ let WorkInfo = [
       of millions of customers.
       <br />
       <br />
-      I developed a new system to centralize the storage of over <strong>50 million</strong> customer payment details without 
-      adding any latency in the user experience.
+      Using <strong>Python</strong> with <strong>Tornado</strong>, I built functionality that would block a user's order when 
+      we thought they were behaving suspiciously. Along with this, I included an admin panel UI in <strong>React</strong> that 
+      allowed non-technical staff to configure the detection parameters.
       <br />
       <br />
-      I built a process for retrying failed payments that met certain conditions with a projected 
-      annual recovery of <strong>$45 million</strong>. I also implemented a feature to unban users based on how they interacted 
-      with Wish's ads, increasing our weekly gross merchandise value by <strong>$30,XXX</strong>.
+      I developed a process for retrying failed payments that met certain conditions with a projected 
+      annual recovery of <strong>$45 million</strong>. I also implemented a feature to unban banned users that we deemed unlikely to
+      offend again, increasing our gross merchandise value by <strong>$120K per month</strong>.
     </div>,
   },
   {
