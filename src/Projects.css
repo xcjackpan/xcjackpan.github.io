@@ -14,7 +14,7 @@
 
 .projects .title {
   margin: 5% 0 8% 0;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
@@ -45,11 +45,11 @@
 
 .projects .card .project-name {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .projects .card .award {
-  font-size: 0.8em;
+  font-size: 0.7em;
   background-color: #8E3B46;
   color: white;
   padding: 1px 4px;
@@ -58,7 +58,7 @@
 
 .projects .card .description {
   min-height: 20vh;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .projects .card .tools {

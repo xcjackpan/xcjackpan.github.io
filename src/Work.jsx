@@ -18,6 +18,31 @@ let WorkPanelHeader = (props) => {
 
 let WorkInfo = [
   {
+    company: "Wish (Again!)", image:"images/wish.png", 
+    info: "Software Engineer, Payments | Sep - Dec 2020",
+    time: "Jan - April 2020",
+    desc:
+    <div className="description">
+      I returned to the Payments team at Wish, this time working remotely from Canada!
+      <br />
+      <br />
+      I designed and built a data aggregation pipeline using <strong>Python</strong> and <strong>SQL</strong> that automatically
+      generated financial reports from internal data. This tool helped meet a <strong>critical auditing requirement needed ahead 
+      of <a href="https://www.investors.com/news/technology/wish-ipo-puts-17-billion-plus-valuation-e-commerce-contextlogic/">
+        the company's IPO
+      </a></strong>.
+      <br />
+      <br />
+      I also built a suite of anti-fraud logic all throughout the payments processing lifecycle — combining a wide variety of 
+      signals like a user's purchase history, their actions on a page, and the aggregated behavior of other similar users — which
+      led to impacts like a <strong>40% reduction in the number of fraudulent attempted payment information updates</strong>.
+      <br />
+      <br />
+      I helped defend against a sudden and critical attack on our payments system by fraudsters, working with the buyer risk team
+      to push out urgent defensive measures that <strong>prevented >$667k in losses to fraudulent transactions</strong>
+    </div>,
+  },
+  {
     company: "Wish", image:"images/wish.png", 
     info: "Software Engineer, Payments | Jan - April 2020",
     time: "Jan - April 2020",
@@ -40,7 +65,10 @@ let WorkInfo = [
       <br />
       <br />
       I developed a process for retrying failed payments that met certain conditions with a projected 
-      annual recovery of <strong>$45 million</strong>. I also implemented a feature to unban banned users that we deemed unlikely to
+      annual recovery of <strong>$45 million</strong>. 
+      <br />
+      <br />
+      I also implemented a feature to unban banned users that we deemed unlikely to
       offend again, increasing our gross merchandise value by <strong>$120K per month</strong>.
     </div>,
   },
@@ -88,9 +116,9 @@ let WorkInfo = [
 ]
 
 let Skills = {
-  Languages: ["Python", "JavaScript", "TypeScript", "CSS", "C++", "C"], 
-  Frameworks: ["Flask", "Tornado", "React", "Redux", "Express", "Mongoose"], 
-  Technologies: ["Node", "MongoDB", "Docker", "React Native", "Git"]
+  Languages: ["Python", "JavaScript", "TypeScript", "Go", "SQL", "CSS", "C++", "C"], 
+  Frameworks: ["Flask", "Tornado", "React", "Redux", "Express"], 
+  Technologies: ["Node", "MongoDB", "Docker", "Git"]
 };
 
 let Work = (props) => {

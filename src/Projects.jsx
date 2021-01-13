@@ -55,6 +55,17 @@ let ProjectInfo = [
     award: "Finalist @ HackThe6ix",
   },
   {
+    name: "Chess DLC",
+    image:"images/chess_dlc.png",
+    tools:"Go, React, Typescript",
+    desc: 
+      `A web client for me to experiment with my nerdiest hobby: designing variants of chess. Users can freely create
+      and invite each other to matches. Games are all played in real-time thanks to websockets concurrently managed
+      on the backend.`,
+    github: "https://github.com/xcjackpan/chess_dlc",
+    demo: "http://chessdlc-env.eba-73rgmsgm.ca-central-1.elasticbeanstalk.com/",
+  },
+  {
     name: "Ceci",
     image:"images/ceci.png", 
     tools:"Python",
