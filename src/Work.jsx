@@ -18,9 +18,19 @@ let WorkPanelHeader = (props) => {
 
 let WorkInfo = [
   {
+    company: "Bloomberg", image:"images/bloomberg.png", 
+    info: "Incoming Software Engineer | May - Aug 2021",
+    time: "May - Aug 2021",
+    desc:
+    <div className="description">
+      Placeholder
+    </div>,
+    disabled: true,
+  },
+  {
     company: "Wish (Again!)", image:"images/wish.png", 
     info: "Software Engineer, Payments | Sep - Dec 2020",
-    time: "Jan - April 2020",
+    time: "Sep - Dec 2020",
     desc:
     <div className="description">
       I returned to the Payments team at Wish, this time working remotely from Canada!
@@ -41,6 +51,7 @@ let WorkInfo = [
       I helped defend against a sudden and critical attack on our payments system by fraudsters, working with the buyer risk team
       to push out urgent defensive measures that <strong>prevented >$667k in losses to fraudulent transactions</strong>
     </div>,
+    disabled: false,
   },
   {
     company: "Wish", image:"images/wish.png", 
@@ -71,6 +82,7 @@ let WorkInfo = [
       I also implemented a feature to unban banned users that we deemed unlikely to
       offend again, increasing our gross merchandise value by <strong>$120K per month</strong>.
     </div>,
+    disabled: false,
   },
   {
     company: "D2L", image:"images/d2l.png", 
@@ -92,6 +104,7 @@ let WorkInfo = [
       similar to OneNote. Our <strong>React</strong> frontend was written in <strong>TypeScript</strong>.
       The backend used <strong>Node</strong> and <strong>MongoDB</strong> with <strong>Mongoose</strong>.
     </div>,
+    disabled: false,
   },
   {
     company: "DragonAgile", image:"images/dragonagile.png", 
@@ -112,6 +125,7 @@ let WorkInfo = [
         I also designed and prototyped a variety of Jira plugins using <strong>Java</strong>. Each
         was built according to specifications from our clients.
       </div>,
+    disabled: false,
   },
 ]
 
@@ -128,8 +142,12 @@ let Work = (props) => {
       <div className="experience-block">
         <div className="timeline">
           {WorkInfo.map((elem, index) => {
+            let collapseName = "work-item"
+            if (elem["disabled"]) {
+              collapseName = "work-item-disabled"
+            }
             return (
-              <Collapse className="work-item" expandIconPosition="right">
+              <Collapse className={collapseName} expandIconPosition="right">
                 <Panel className="panel"
                        key={index}
                        header={<WorkPanelHeader image={elem.image} company={elem.company} info={elem.info}/>}>

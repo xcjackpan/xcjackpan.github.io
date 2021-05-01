@@ -84,7 +84,16 @@
   margin-bottom: 20px;
 }
 
-.work .work-item .panel .header {
+.work .work-item-disabled {
+  margin-bottom: 20px;
+  pointer-events: none;
+}
+
+.work .work-item-disabled svg {
+  display: none !important;
+}
+
+.work .panel .header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -92,30 +101,30 @@
   padding: 20px 5px;
 }
 
-.work .work-item .panel .header .heading {
+.work .panel .header .heading {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
 
-.work .work-item .panel .header .icon {
+.work .panel .header .icon {
   padding: 0;
   margin: 0;
   width: 70px;
   border-radius: 50%;
 }
 
-.work .work-item .panel .header .company {
+.work .panel .header .company {
   font-size: 1.5em;
   font-weight: bold;
   padding-bottom: 10px;
 }
 
-.work .work-item .panel .header .info {
+.work .panel .header .info {
   font-size: 1.3em;
 }
 
-.work .work-item .panel .description {
+.work .panel .description {
   font-size: 1.2em;
   padding: 4px;
 }
@@ -147,19 +156,19 @@
     width: 45vw;
   }
 
-  .work .work-item .panel .header .company {
+  .work .panel .header .company {
     font-size: 1.25em;
   }
 
-  .work .work-item .panel .header .info {
+  .work .panel .header .info {
     font-size: 1.15em;
   }
 
-  .work .work-item .panel .description {
+  .work .panel .description {
     font-size: 1.15em;
   }
 
-  .work .work-item .panel .header {
+  .work .panel .header {
     padding: 8px 10px;
   }
 }
@@ -214,11 +223,11 @@
     align-self: center; 
   }
 
-  .work .work-item .panel .header .icon {
+  .work .panel .header .icon {
     width: 45px;
   }
 
-  .work .work-item .panel .header {
+  .work .panel .header {
     padding: 5px 10px;
   }
 }
@@ -232,15 +241,15 @@
     width: 80vw;
   }
 
-  .work .work-item .panel .header .company {
+  .work .panel .header .company {
     font-size: 1.2em;
   }
 
-  .work .work-item .panel .header .info {
+  .work .panel .header .info {
     font-size: 1.1em;
   }
 
-  .work .work-item .panel .description {
+  .work .panel .description {
     font-size: 1.1em;
   }
 }
